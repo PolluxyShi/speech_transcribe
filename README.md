@@ -59,6 +59,12 @@ CUDA_VISIBLE_DEVICES=0 python main.py
 
 > 通过`CUDA_VISIBLE_DEVICES`指定GPU，目前仅支持单GPU
 
+## 4. 接口调用
+
+接口使用方法参考`client_sample.py`
+```bash
+python client_sample.py
+```
 
 ## 功能特性
 
