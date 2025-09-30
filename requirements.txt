@@ -1,0 +1,13 @@
+aiofiles==23.2.0
+fastapi==0.104.1
+funasr==1.2.7
+gputil==1.4.0
+librosa==0.10.1
+numpy==2.0.2
+psutil==5.9.6
+pydantic==2.5.0
+pydub==0.25.1
+python-multipart==0.0.6
+soundfile==0.13.1
+uvicorn==0.24.0
+whisperx==3.4.2
