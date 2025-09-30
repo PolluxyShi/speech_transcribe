@@ -611,6 +611,11 @@ async def get_config():
     }
 
 if __name__ == "__main__":
+    # 在启动前确保日志配置生效
+    logging.getLogger().setLevel(logging.INFO)
+    for handler in logging.getLogger().handlers:
+        handler.setLevel(logging.INFO)
+
     print("CUDA_VISIBLE_DEVICES:", os.environ.get("CUDA_VISIBLE_DEVICES"))
     print("可用GPU数量:", torch.cuda.device_count())
     print("当前使用GPU索引:", torch.cuda.current_device())
